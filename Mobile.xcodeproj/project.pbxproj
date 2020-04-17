@@ -19,6 +19,7 @@
 		045A7AA92449BE1F0036E69C /* MobileDataUsage.swift in Sources */ = {isa = PBXBuildFile; fileRef = 045A7AA82449BE1F0036E69C /* MobileDataUsage.swift */; };
 		045A7AAB2449C0770036E69C /* WebService.swift in Sources */ = {isa = PBXBuildFile; fileRef = 045A7AAA2449C0770036E69C /* WebService.swift */; };
 		045A7AAD2449C8DB0036E69C /* MasterViewPresenter.swift in Sources */ = {isa = PBXBuildFile; fileRef = 045A7AAC2449C8DB0036E69C /* MasterViewPresenter.swift */; };
+		045A7AB02449DF750036E69C /* MasterViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 045A7AAF2449DF750036E69C /* MasterViewModel.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -57,6 +58,7 @@
 		045A7AA82449BE1F0036E69C /* MobileDataUsage.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MobileDataUsage.swift; sourceTree = "<group>"; };
 		045A7AAA2449C0770036E69C /* WebService.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = WebService.swift; sourceTree = "<group>"; };
 		045A7AAC2449C8DB0036E69C /* MasterViewPresenter.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MasterViewPresenter.swift; sourceTree = "<group>"; };
+		045A7AAF2449DF750036E69C /* MasterViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MasterViewModel.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -107,6 +109,7 @@
 		045A7A682449B8390036E69C /* Mobile */ = {
 			isa = PBXGroup;
 			children = (
+				045A7AAE2449DF110036E69C /* ViewModel */,
 				045A7A9F2449B9200036E69C /* Networking */,
 				045A7A9B2449B8BF0036E69C /* Models */,
 				045A7A9C2449B9010036E69C /* Views */,
@@ -242,6 +245,14 @@
 			children = (
 			);
 			path = Presenters;
+			sourceTree = "<group>";
+		};
+		045A7AAE2449DF110036E69C /* ViewModel */ = {
+			isa = PBXGroup;
+			children = (
+				045A7AAF2449DF750036E69C /* MasterViewModel.swift */,
+			);
+			path = ViewModel;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -382,6 +393,7 @@
 				045A7A6E2449B8390036E69C /* MasterViewController.swift in Sources */,
 				045A7A702449B8390036E69C /* DetailViewController.swift in Sources */,
 				045A7AAD2449C8DB0036E69C /* MasterViewPresenter.swift in Sources */,
+				045A7AB02449DF750036E69C /* MasterViewModel.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
