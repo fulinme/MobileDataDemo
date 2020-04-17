@@ -19,6 +19,8 @@
 		045A7AAB2449C0770036E69C /* WebService.swift in Sources */ = {isa = PBXBuildFile; fileRef = 045A7AAA2449C0770036E69C /* WebService.swift */; };
 		045A7AAD2449C8DB0036E69C /* MasterViewPresenter.swift in Sources */ = {isa = PBXBuildFile; fileRef = 045A7AAC2449C8DB0036E69C /* MasterViewPresenter.swift */; };
 		045A7AB02449DF750036E69C /* MasterViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 045A7AAF2449DF750036E69C /* MasterViewModel.swift */; };
+		045A7AB32449E5920036E69C /* MasterTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 045A7AB12449E5920036E69C /* MasterTableViewCell.swift */; };
+		045A7AB42449E5920036E69C /* MasterTableViewCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = 045A7AB22449E5920036E69C /* MasterTableViewCell.xib */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -57,6 +59,8 @@
 		045A7AAA2449C0770036E69C /* WebService.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = WebService.swift; sourceTree = "<group>"; };
 		045A7AAC2449C8DB0036E69C /* MasterViewPresenter.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MasterViewPresenter.swift; sourceTree = "<group>"; };
 		045A7AAF2449DF750036E69C /* MasterViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MasterViewModel.swift; sourceTree = "<group>"; };
+		045A7AB12449E5920036E69C /* MasterTableViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MasterTableViewCell.swift; sourceTree = "<group>"; };
+		045A7AB22449E5920036E69C /* MasterTableViewCell.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = MasterTableViewCell.xib; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -157,6 +161,8 @@
 			isa = PBXGroup;
 			children = (
 				045A7A6D2449B8390036E69C /* MasterViewController.swift */,
+				045A7AB12449E5920036E69C /* MasterTableViewCell.swift */,
+				045A7AB22449E5920036E69C /* MasterTableViewCell.xib */,
 			);
 			path = Views;
 			sourceTree = "<group>";
@@ -359,6 +365,7 @@
 				045A7A782449B83B0036E69C /* LaunchScreen.storyboard in Resources */,
 				045A7A752449B83B0036E69C /* Assets.xcassets in Resources */,
 				045A7A732449B8390036E69C /* Main.storyboard in Resources */,
+				045A7AB42449E5920036E69C /* MasterTableViewCell.xib in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -386,6 +393,7 @@
 				045A7AAB2449C0770036E69C /* WebService.swift in Sources */,
 				045A7A6A2449B8390036E69C /* AppDelegate.swift in Sources */,
 				045A7A6C2449B8390036E69C /* SceneDelegate.swift in Sources */,
+				045A7AB32449E5920036E69C /* MasterTableViewCell.swift in Sources */,
 				045A7AA92449BE1F0036E69C /* MobileDataUsage.swift in Sources */,
 				045A7A6E2449B8390036E69C /* MasterViewController.swift in Sources */,
 				045A7AAD2449C8DB0036E69C /* MasterViewPresenter.swift in Sources */,

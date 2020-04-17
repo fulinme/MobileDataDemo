@@ -14,7 +14,6 @@ protocol MasterViewProtocol: AnyObject  {
 }
 
 
-
 class MasterViewController:  UIViewController {
 
     
@@ -23,11 +22,51 @@ class MasterViewController:  UIViewController {
     }()
     
     
-    var data = [MasterViewModel]()
-
+    var data:[MasterViewModel] = []
 
     
+    @IBOutlet weak var tableView: UITableView!
     
+    
+    override func viewDidLoad() {
+        super.viewDidLoad()
+        
+        setUI()
+    }
+    
+    
+    private func setUI() {
+        tableView.register(MasterTableViewCell.nib(), forCellReuseIdentifier: MasterTableViewCell.identifier)
+        tableView.dataSource = self
+        tableView.delegate = self
+        
+        
+    }
+
+    
+
+}
+
+
+
+extension MasterViewController: UITableViewDataSource {
+    func tableView(_ tableView: UITableView, numberOfRowsInSection section: Int) -> Int {
+        return data.count
+    }
+    
+    func tableView(_ tableView: UITableView, cellForRowAt indexPath: IndexPath) -> UITableViewCell {
+        let cell = tableView.dequeueReusableCell(withIdentifier: MasterTableViewCell.identifier , for: indexPath)
+               
+        return cell
+    }
+    
+    
+}
+
+
+extension MasterViewController: UITableViewDelegate {
+    
+
     
 }
 
@@ -35,7 +74,5 @@ class MasterViewController:  UIViewController {
 
 extension MasterViewController: MasterViewProtocol {
     
-    
-    
-    
+
 }
