@@ -11,6 +11,8 @@ import Foundation
 
 protocol MasterViewPresenterProtocol {
     
+    
+    
 }
 
 

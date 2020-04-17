@@ -31,6 +31,14 @@ struct ResultObj: Codable {
     let links: Links
     let limit, total: Int
     
+    enum CodingKeys: String, CodingKey {
+           case resourceID = "resource_id"
+           case fields
+           case records
+           case links = "_links"
+           case limit
+           case total
+       }
     
 }
 
@@ -43,8 +51,6 @@ struct Field: Codable {
 // MARK: - Links
 struct Links: Codable {
     let start, next: String
-    
-    
 }
 
 
@@ -52,4 +58,10 @@ struct Links: Codable {
 struct Record: Codable {
     let volumeOfMobileData, quarter: String
     let id: Int
+    
+    enum CodingKeys: String, CodingKey {
+              case volumeOfMobileData = "volume_of_mobile_data"
+              case quarter
+              case id = "_id"
+          }
 }

@@ -11,6 +11,7 @@ import UIKit
 protocol MasterViewProtocol: AnyObject  {
     
     
+    
 }
 
 
@@ -32,6 +33,7 @@ class MasterViewController:  UIViewController {
         super.viewDidLoad()
         
         setUI()
+        
     }
     
     
