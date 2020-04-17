@@ -121,6 +121,10 @@
 		045A7A812449B83B0036E69C /* MobileTests */ = {
 			isa = PBXGroup;
 			children = (
+				045A7AA02449B96F0036E69C /* Cases */,
+				045A7AA12449B97A0036E69C /* Mocks */,
+				045A7AA22449B9840036E69C /* Test Classes */,
+				045A7AA32449B98D0036E69C /* Test Extensions */,
 				045A7A822449B83B0036E69C /* MobileTests.swift */,
 				045A7A842449B83B0036E69C /* Info.plist */,
 			);
@@ -169,6 +173,66 @@
 			children = (
 			);
 			path = Networking;
+			sourceTree = "<group>";
+		};
+		045A7AA02449B96F0036E69C /* Cases */ = {
+			isa = PBXGroup;
+			children = (
+				045A7AA72449BA650036E69C /* Presenters */,
+				045A7AA62449BA600036E69C /* Views */,
+				045A7AA52449BA580036E69C /* Models */,
+				045A7AA42449BA4D0036E69C /* Networking */,
+			);
+			path = Cases;
+			sourceTree = "<group>";
+		};
+		045A7AA12449B97A0036E69C /* Mocks */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = Mocks;
+			sourceTree = "<group>";
+		};
+		045A7AA22449B9840036E69C /* Test Classes */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = "Test Classes";
+			sourceTree = "<group>";
+		};
+		045A7AA32449B98D0036E69C /* Test Extensions */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = "Test Extensions";
+			sourceTree = "<group>";
+		};
+		045A7AA42449BA4D0036E69C /* Networking */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = Networking;
+			sourceTree = "<group>";
+		};
+		045A7AA52449BA580036E69C /* Models */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = Models;
+			sourceTree = "<group>";
+		};
+		045A7AA62449BA600036E69C /* Views */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = Views;
+			sourceTree = "<group>";
+		};
+		045A7AA72449BA650036E69C /* Presenters */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = Presenters;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
