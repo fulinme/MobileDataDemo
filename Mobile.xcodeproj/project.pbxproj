@@ -101,6 +101,11 @@
 		045A7A682449B8390036E69C /* Mobile */ = {
 			isa = PBXGroup;
 			children = (
+				045A7A9F2449B9200036E69C /* Networking */,
+				045A7A9B2449B8BF0036E69C /* Models */,
+				045A7A9C2449B9010036E69C /* Views */,
+				045A7A9D2449B9080036E69C /* Presenters */,
+				045A7A9E2449B9160036E69C /* Extension */,
 				045A7A692449B8390036E69C /* AppDelegate.swift */,
 				045A7A6B2449B8390036E69C /* SceneDelegate.swift */,
 				045A7A6D2449B8390036E69C /* MasterViewController.swift */,
@@ -129,6 +134,41 @@
 				045A7A8F2449B83B0036E69C /* Info.plist */,
 			);
 			path = MobileUITests;
+			sourceTree = "<group>";
+		};
+		045A7A9B2449B8BF0036E69C /* Models */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = Models;
+			sourceTree = "<group>";
+		};
+		045A7A9C2449B9010036E69C /* Views */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = Views;
+			sourceTree = "<group>";
+		};
+		045A7A9D2449B9080036E69C /* Presenters */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = Presenters;
+			sourceTree = "<group>";
+		};
+		045A7A9E2449B9160036E69C /* Extension */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = Extension;
+			sourceTree = "<group>";
+		};
+		045A7A9F2449B9200036E69C /* Networking */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = Networking;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
