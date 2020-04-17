@@ -16,6 +16,7 @@
 		045A7A782449B83B0036E69C /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 045A7A762449B83B0036E69C /* LaunchScreen.storyboard */; };
 		045A7A832449B83B0036E69C /* MobileTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 045A7A822449B83B0036E69C /* MobileTests.swift */; };
 		045A7A8E2449B83B0036E69C /* MobileUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 045A7A8D2449B83B0036E69C /* MobileUITests.swift */; };
+		045A7AA92449BE1F0036E69C /* MobileDataUsage.swift in Sources */ = {isa = PBXBuildFile; fileRef = 045A7AA82449BE1F0036E69C /* MobileDataUsage.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -51,6 +52,7 @@
 		045A7A892449B83B0036E69C /* MobileUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = MobileUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		045A7A8D2449B83B0036E69C /* MobileUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MobileUITests.swift; sourceTree = "<group>"; };
 		045A7A8F2449B83B0036E69C /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		045A7AA82449BE1F0036E69C /* MobileDataUsage.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MobileDataUsage.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -143,6 +145,7 @@
 		045A7A9B2449B8BF0036E69C /* Models */ = {
 			isa = PBXGroup;
 			children = (
+				045A7AA82449BE1F0036E69C /* MobileDataUsage.swift */,
 			);
 			path = Models;
 			sourceTree = "<group>";
@@ -368,6 +371,7 @@
 			files = (
 				045A7A6A2449B8390036E69C /* AppDelegate.swift in Sources */,
 				045A7A6C2449B8390036E69C /* SceneDelegate.swift in Sources */,
+				045A7AA92449BE1F0036E69C /* MobileDataUsage.swift in Sources */,
 				045A7A6E2449B8390036E69C /* MasterViewController.swift in Sources */,
 				045A7A702449B8390036E69C /* DetailViewController.swift in Sources */,
 			);
