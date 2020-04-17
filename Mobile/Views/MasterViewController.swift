@@ -8,8 +8,23 @@
 
 import UIKit
 
+protocol MasterViewProtocol: AnyObject  {
+    
+    
+
+}
+
+
+
 class MasterViewController: UITableViewController {
 
+    
+    fileprivate lazy var presenter : MasterViewPresenterProtocol = {
+        return MasterViewPresenter(view: self)
+    }()
+    
+    
+    
     var detailViewController: DetailViewController? = nil
     var objects = [Any]()
 
@@ -88,3 +103,12 @@ class MasterViewController: UITableViewController {
 
 }
 
+
+
+
+extension MasterViewController: MasterViewProtocol {
+    
+    
+    
+    
+}

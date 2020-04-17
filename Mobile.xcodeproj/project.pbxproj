@@ -18,6 +18,7 @@
 		045A7A8E2449B83B0036E69C /* MobileUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 045A7A8D2449B83B0036E69C /* MobileUITests.swift */; };
 		045A7AA92449BE1F0036E69C /* MobileDataUsage.swift in Sources */ = {isa = PBXBuildFile; fileRef = 045A7AA82449BE1F0036E69C /* MobileDataUsage.swift */; };
 		045A7AAB2449C0770036E69C /* WebService.swift in Sources */ = {isa = PBXBuildFile; fileRef = 045A7AAA2449C0770036E69C /* WebService.swift */; };
+		045A7AAD2449C8DB0036E69C /* MasterViewPresenter.swift in Sources */ = {isa = PBXBuildFile; fileRef = 045A7AAC2449C8DB0036E69C /* MasterViewPresenter.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -55,6 +56,7 @@
 		045A7A8F2449B83B0036E69C /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		045A7AA82449BE1F0036E69C /* MobileDataUsage.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MobileDataUsage.swift; sourceTree = "<group>"; };
 		045A7AAA2449C0770036E69C /* WebService.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = WebService.swift; sourceTree = "<group>"; };
+		045A7AAC2449C8DB0036E69C /* MasterViewPresenter.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MasterViewPresenter.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -112,8 +114,6 @@
 				045A7A9E2449B9160036E69C /* Extension */,
 				045A7A692449B8390036E69C /* AppDelegate.swift */,
 				045A7A6B2449B8390036E69C /* SceneDelegate.swift */,
-				045A7A6D2449B8390036E69C /* MasterViewController.swift */,
-				045A7A6F2449B8390036E69C /* DetailViewController.swift */,
 				045A7A712449B8390036E69C /* Main.storyboard */,
 				045A7A742449B83B0036E69C /* Assets.xcassets */,
 				045A7A762449B83B0036E69C /* LaunchScreen.storyboard */,
@@ -155,6 +155,8 @@
 		045A7A9C2449B9010036E69C /* Views */ = {
 			isa = PBXGroup;
 			children = (
+				045A7A6D2449B8390036E69C /* MasterViewController.swift */,
+				045A7A6F2449B8390036E69C /* DetailViewController.swift */,
 			);
 			path = Views;
 			sourceTree = "<group>";
@@ -162,6 +164,7 @@
 		045A7A9D2449B9080036E69C /* Presenters */ = {
 			isa = PBXGroup;
 			children = (
+				045A7AAC2449C8DB0036E69C /* MasterViewPresenter.swift */,
 			);
 			path = Presenters;
 			sourceTree = "<group>";
@@ -378,6 +381,7 @@
 				045A7AA92449BE1F0036E69C /* MobileDataUsage.swift in Sources */,
 				045A7A6E2449B8390036E69C /* MasterViewController.swift in Sources */,
 				045A7A702449B8390036E69C /* DetailViewController.swift in Sources */,
+				045A7AAD2449C8DB0036E69C /* MasterViewPresenter.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
