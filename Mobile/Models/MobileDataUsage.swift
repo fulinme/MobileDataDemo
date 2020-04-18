@@ -72,4 +72,8 @@ extension Record {
         return Double(volumeOfMobileData) ?? 0
     }
     
+    var year: String {
+        return (quarter.components(separatedBy: "-"))[0]
+    }
+    
 }

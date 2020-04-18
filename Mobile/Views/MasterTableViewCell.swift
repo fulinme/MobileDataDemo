@@ -10,6 +10,8 @@ import UIKit
 
 class MasterTableViewCell: UITableViewCell {
 
+    var imageViewTapHandler:(() -> ())?
+    
     var data: MasterViewModel? = nil
     
     static let identifier = "MasterTableViewCell"
@@ -22,27 +24,39 @@ class MasterTableViewCell: UITableViewCell {
     override func awakeFromNib() {
         super.awakeFromNib()
         // Initialization code
+        
     }
-
-    
-    override func setSelected(_ selected: Bool, animated: Bool) {
-        super.setSelected(selected, animated: animated)
-
-        // Configure the view for the selected state
-    }
-    
     
     static func nib() -> UINib {
            return UINib(nibName: identifier, bundle: nil)
     }
     
     
+    @objc func imageViewTap() {
+        imageViewTapHandler?()
+    }
+    
+    private func configImageViewClick() {
+        
+        let tap = UITapGestureRecognizer(target: self, action: #selector(imageViewTap))
+        
+        chartImageView.addGestureRecognizer(tap)
+    }
+    
+    
     func setData(data: MasterViewModel) {
+        self.data = data
         
         yearLabel.text = data.year
         yearDataLabel.text = String(format: "%.6f" ,data.yearVolumeOfMobileDataValue)
         
-        data.hasQuarterDecrease ? (chartImageView.isHidden = false) : (chartImageView.isHidden = true)
+        if data.hasQuarterDecrease {
+            chartImageView.isHidden = false
+            configImageViewClick()
+        }
+        else {
+            chartImageView.isHidden = true
+        }
         
     }
      
