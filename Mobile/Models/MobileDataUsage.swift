@@ -65,3 +65,11 @@ struct Record: Codable {
               case id = "_id"
           }
 }
+
+extension Record {
+    var volumeOfMobileDataValue : Double {
+        //guard let value = volumeOfMobileData else { return nil }
+        return Double(value) ?? 0
+    }
+    
+}
