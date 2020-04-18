@@ -64,6 +64,25 @@ extension MasterViewController: UITableViewDataSource {
         let viewModel = data[indexPath.row]
         cell.setData(data: viewModel)
         
+        cell.imageViewTapHandler = {
+            [unowned self] in
+            
+            let cellData = self.data[indexPath.row]
+            debugPrint("process image clieck:")
+            
+            var message = ""
+            cellData.record.forEach { masterRecordViewModel in
+                message += "\(masterRecordViewModel.quarter)  \(String(format: "%.6f" ,masterRecordViewModel.quarterVolumeOfMobileDataValue))\r\n"
+            }
+            
+            let alert = UIAlertController(title: cellData.year,
+                                          message: message, preferredStyle: .alert)
+            let okAction = UIAlertAction(title: "OK", style: .default, handler: nil)
+            alert.addAction(okAction)
+            
+            self.present(alert, animated: true, completion: nil)
+        }
+        
         return cell
     }
     
