@@ -63,8 +63,18 @@ extension MasterViewPresenter : MasterViewPresenterProtocol {
     
     func loadData() {
         
-        
-        
+        WebService.getMobileDataUsageRequest(successHandler: { [unowned self] mobileDataUsage in
+            
+            let viewData:[MasterViewModel] = self.convert(from: mobileDataUsage)
+            
+            DispatchQueue.main.async{
+                self.view?.receivedData(data: viewData)
+            }
+            
+                
+        }, failureHandler: {
+            
+        })
         
     }
     

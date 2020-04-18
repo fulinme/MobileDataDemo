@@ -10,10 +10,12 @@ import UIKit
 
 class MasterTableViewCell: UITableViewCell {
 
+    var data: MasterViewModel? = nil
+    
     static let identifier = "MasterTableViewCell"
     
     @IBOutlet weak var yearLabel: UILabel!
-    @IBOutlet weak var dataLabel: UILabel!
+    @IBOutlet weak var yearDataLabel: UILabel!
     @IBOutlet weak var chartImageView: UIImageView!
     
     
@@ -32,7 +34,18 @@ class MasterTableViewCell: UITableViewCell {
     
     static func nib() -> UINib {
            return UINib(nibName: identifier, bundle: nil)
-       }
+    }
+    
+    
+    func setData(data: MasterViewModel) {
+        
+        yearLabel.text = data.year
+        yearDataLabel.text = String(format: "%.6f" ,data.yearVolumeOfMobileDataValue)
+        
+        data.hasQuarterDecrease ? (chartImageView.isHidden = false) : (chartImageView.isHidden = true)
+        
+    }
+     
     
     
 }

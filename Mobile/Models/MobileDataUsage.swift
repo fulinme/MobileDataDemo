@@ -69,7 +69,7 @@ struct Record: Codable {
 extension Record {
     var volumeOfMobileDataValue : Double {
         //guard let value = volumeOfMobileData else { return nil }
-        return Double(value) ?? 0
+        return Double(volumeOfMobileData) ?? 0
     }
     
 }

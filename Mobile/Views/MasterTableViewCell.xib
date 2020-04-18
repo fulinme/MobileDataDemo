@@ -55,7 +55,7 @@
             <viewLayoutGuide key="safeArea" id="njF-e1-oar"/>
             <connections>
                 <outlet property="chartImageView" destination="LKd-qn-aZ6" id="5WQ-pe-hma"/>
-                <outlet property="dataLabel" destination="Gwr-e2-d4k" id="vif-lE-XXf"/>
+                <outlet property="yearDataLabel" destination="Gwr-e2-d4k" id="vZf-Fs-rxQ"/>
                 <outlet property="yearLabel" destination="A3m-Jz-sTr" id="UZ2-a7-nmJ"/>
             </connections>
             <point key="canvasLocation" x="118.84057971014494" y="131.58482142857142"/>

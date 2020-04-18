@@ -10,7 +10,7 @@ import UIKit
 
 protocol MasterViewProtocol: AnyObject  {
     
-    
+    func receivedData(data: [MasterViewModel])
     
 }
 
@@ -33,6 +33,8 @@ class MasterViewController:  UIViewController {
         super.viewDidLoad()
         
         setUI()
+        
+        presenter.loadData()
         
     }
     
@@ -57,8 +59,11 @@ extension MasterViewController: UITableViewDataSource {
     }
     
     func tableView(_ tableView: UITableView, cellForRowAt indexPath: IndexPath) -> UITableViewCell {
-        let cell = tableView.dequeueReusableCell(withIdentifier: MasterTableViewCell.identifier , for: indexPath)
-               
+        let cell = tableView.dequeueReusableCell(withIdentifier: MasterTableViewCell.identifier , for: indexPath) as! MasterTableViewCell
+         
+        let viewModel = data[indexPath.row]
+        cell.setData(data: viewModel)
+        
         return cell
     }
     
@@ -75,6 +80,15 @@ extension MasterViewController: UITableViewDelegate {
 
 
 extension MasterViewController: MasterViewProtocol {
+    func receivedData(data: [MasterViewModel]) {
+        print("*******")
+        print(data)
+        
+        self.data = data
+        tableView.reloadData()
+    }
+    
+    
     
 
 }
