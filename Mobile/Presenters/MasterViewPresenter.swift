@@ -29,7 +29,7 @@ class MasterViewPresenter {
         
         var result:[MasterViewModel] = []
         
-        data.result.records.forEach{
+        data.result.records.filter{ $0.year >= "2008" && $0.year <= "2018" }.forEach{
             record in
             
                 let yearQuarterArray = record.quarter.components(separatedBy: "-")
