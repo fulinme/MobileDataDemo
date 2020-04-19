@@ -19,7 +19,7 @@ protocol MasterViewProtocol: AnyObject  {
 class MasterViewController:  UIViewController {
 
     
-    fileprivate lazy var presenter : MasterViewPresenterProtocol = {
+    lazy var presenter : MasterViewPresenterProtocol = {
         return MasterViewPresenter(view: self)
     }()
     

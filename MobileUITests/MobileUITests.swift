@@ -23,15 +23,23 @@ class MobileUITests: XCTestCase {
         // Put teardown code here. This method is called after the invocation of each test method in the class.
     }
 
-    func testExample() throws {
-        // UI tests must launch the application that they test.
+    func test_imagebuttonTap() {
+        
+        
         let app = XCUIApplication()
         app.launch()
-       
-    
-        // Use recording to get started writing UI tests.
         
-                // Use XCTAssert and related functions to verify your tests produce the correct results.
+        app.tables/*@START_MENU_TOKEN@*/.cells.containing(.staticText, identifier:"2011")/*[[".cells.containing(.staticText, identifier:\"14.638703\")",".cells.containing(.staticText, identifier:\"2011\")"],[[[-1,1],[-1,0]]],[0]]@END_MENU_TOKEN@*/.images["icons8-graph-50"].waitForExistence(timeout: 8)
+        
+        app.tables/*@START_MENU_TOKEN@*/.cells.containing(.staticText, identifier:"2011")/*[[".cells.containing(.staticText, identifier:\"14.638703\")",".cells.containing(.staticText, identifier:\"2011\")"],[[[-1,1],[-1,0]]],[0]]@END_MENU_TOKEN@*/.images["icons8-graph-50"].tap()
+        
+        XCTAssertTrue(app.alerts["2011"].exists)
+        
+        app.alerts["2011"].buttons["OK"].tap()
+        
+        XCTAssertFalse(app.alerts["2011"].exists)
+        
+        
     }
     
     

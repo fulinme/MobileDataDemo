@@ -152,7 +152,6 @@
 			children = (
 				045A7AA02449B96F0036E69C /* Cases */,
 				045A7AA12449B97A0036E69C /* Mocks */,
-				045A7AA22449B9840036E69C /* Test Classes */,
 				045A7AA32449B98D0036E69C /* Test Extensions */,
 				045A7ABC244B3D640036E69C /* Data */,
 				045A7A822449B83B0036E69C /* MobileTests.swift */,
@@ -216,7 +215,6 @@
 			children = (
 				045A7AA72449BA650036E69C /* Presenters */,
 				045A7AA62449BA600036E69C /* Views */,
-				045A7AA52449BA580036E69C /* Models */,
 				045A7AA42449BA4D0036E69C /* Networking */,
 			);
 			path = Cases;
@@ -234,13 +232,6 @@
 			path = Mocks;
 			sourceTree = "<group>";
 		};
-		045A7AA22449B9840036E69C /* Test Classes */ = {
-			isa = PBXGroup;
-			children = (
-			);
-			path = "Test Classes";
-			sourceTree = "<group>";
-		};
 		045A7AA32449B98D0036E69C /* Test Extensions */ = {
 			isa = PBXGroup;
 			children = (
@@ -255,13 +246,6 @@
 				045A7ABF244BC8C60036E69C /* WebServiceTests.swift */,
 			);
 			path = Networking;
-			sourceTree = "<group>";
-		};
-		045A7AA52449BA580036E69C /* Models */ = {
-			isa = PBXGroup;
-			children = (
-			);
-			path = Models;
 			sourceTree = "<group>";
 		};
 		045A7AA62449BA600036E69C /* Views */ = {

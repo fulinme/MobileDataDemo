@@ -16,14 +16,18 @@ class WebServiceMock: WebService {
     
     override func getMobileDataUsageRequest(successHandler: @escaping (MobileDataUsage) -> Void, failureHandler: @escaping () -> Void) -> URLSessionDataTask {
 
-        let data = try! Data.fromJSON(fileName: localJsonName)
+        if let data = try? Data.fromJSON(fileName: localJsonName) {
 
-        let decoder = JSONDecoder()
-        if let mobileDataUsage = try? decoder.decode(MobileDataUsage.self, from: data) {
-            successHandler(mobileDataUsage)
+            let decoder = JSONDecoder()
+            if let mobileDataUsage = try? decoder.decode(MobileDataUsage.self, from: data) {
+                successHandler(mobileDataUsage)
+            }
+            else {
+                failureHandler()
+            }
         }
         else {
-            failureHandler()
+             failureHandler()
         }
         
         return URLSessionDataTask()

@@ -13,11 +13,16 @@ class MasterViewControllerTests: XCTestCase {
 
     var sut: MasterViewController!
     
+    var masterViewPresenterMock: MasterViewPresenterMock!
     
+
     override func setUpWithError() throws {
         // Put setup code here. This method is called before the invocation of each test method in the class.
         sut = UIStoryboard(name: "Main", bundle: nil)
         .instantiateInitialViewController() as? MasterViewController
+        
+        sut.presenter = masterViewPresenterMock
+        
     }
 
     override func tearDownWithError() throws {
@@ -25,6 +30,10 @@ class MasterViewControllerTests: XCTestCase {
         sut = nil
         
     }
+    
+    
+    
+    
 
    
 
