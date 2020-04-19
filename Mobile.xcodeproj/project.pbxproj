@@ -27,6 +27,7 @@
 		045A7AC2244BD05D0036E69C /* MasterViewPresenterMock.swift in Sources */ = {isa = PBXBuildFile; fileRef = 045A7AC1244BD05D0036E69C /* MasterViewPresenterMock.swift */; };
 		045A7AC4244BFE510036E69C /* URLSessionMock.swift in Sources */ = {isa = PBXBuildFile; fileRef = 045A7AC3244BFE510036E69C /* URLSessionMock.swift */; };
 		045A7AC6244BFE960036E69C /* URLSessionDataTaskMock.swift in Sources */ = {isa = PBXBuildFile; fileRef = 045A7AC5244BFE960036E69C /* URLSessionDataTaskMock.swift */; };
+		045A7AC8244C25060036E69C /* Data.swift in Sources */ = {isa = PBXBuildFile; fileRef = 045A7AC7244C25060036E69C /* Data.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -73,6 +74,7 @@
 		045A7AC1244BD05D0036E69C /* MasterViewPresenterMock.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MasterViewPresenterMock.swift; sourceTree = "<group>"; };
 		045A7AC3244BFE510036E69C /* URLSessionMock.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = URLSessionMock.swift; sourceTree = "<group>"; };
 		045A7AC5244BFE960036E69C /* URLSessionDataTaskMock.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = URLSessionDataTaskMock.swift; sourceTree = "<group>"; };
+		045A7AC7244C25060036E69C /* Data.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Data.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -232,6 +234,7 @@
 		045A7AA32449B98D0036E69C /* Test Extensions */ = {
 			isa = PBXGroup;
 			children = (
+				045A7AC7244C25060036E69C /* Data.swift */,
 			);
 			path = "Test Extensions";
 			sourceTree = "<group>";
@@ -448,6 +451,7 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				045A7AC8244C25060036E69C /* Data.swift in Sources */,
 				045A7AC4244BFE510036E69C /* URLSessionMock.swift in Sources */,
 				045A7ABB244B3C5C0036E69C /* MasterViewControllerTests.swift in Sources */,
 				045A7AC2244BD05D0036E69C /* MasterViewPresenterMock.swift in Sources */,

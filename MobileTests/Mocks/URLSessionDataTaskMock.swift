@@ -15,6 +15,7 @@ class URLSessionDataTaskMock: URLSessionDataTask {
     
     var completionHandler: (Data?, URLResponse?, Error?) -> Void
     var url: URL
+
     
     init(completioHandler: @escaping (Data?, URLResponse?, Error?) -> Void, url: URL) {
         self.completionHandler = completioHandler

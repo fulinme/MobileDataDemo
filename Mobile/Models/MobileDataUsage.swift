@@ -9,7 +9,8 @@
 import Foundation
 
 // MARK: - MobileDataUsage
-struct MobileDataUsage: Codable {
+struct MobileDataUsage: Codable, Equatable {
+
     let help: String
     let success: Bool
     let result: ResultObj
@@ -20,11 +21,17 @@ struct MobileDataUsage: Codable {
         case result = "result"
     }
 
+    
+    static func == (lhs: MobileDataUsage, rhs: MobileDataUsage) -> Bool {
+        return lhs.help == rhs.help && lhs.success == rhs.success  && lhs.result == rhs.result
+    }
 }
 
 
 // MARK: - Result
-struct ResultObj: Codable {
+struct ResultObj: Codable, Equatable {
+   
+    
     let resourceID: String
     let fields: [Field]
     let records: [Record]
@@ -38,7 +45,12 @@ struct ResultObj: Codable {
            case links = "_links"
            case limit
            case total
-       }
+    }
+    
+    
+    static func == (lhs: ResultObj, rhs: ResultObj) -> Bool {
+        return lhs.resourceID == rhs.resourceID
+    }
     
 }
 
