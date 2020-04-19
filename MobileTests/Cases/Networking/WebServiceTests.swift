@@ -90,6 +90,33 @@ class WebServiceTests: XCTestCase {
     
     
     
+    func test_getMobileDataUsageRequest_givenInValidJSON_callsCompletion() throws {
+           
+           let data = try Data.fromJSON(fileName: "datastore_search_invalid")
+           
+           let decoder = JSONDecoder()
+           let mobileDataUsage = try? decoder.decode(MobileDataUsage.self, from: data)
+           
+           
+           let response = HTTPURLResponse(url: url, statusCode: 200, httpVersion: nil, headerFields: nil)
+         
+           var receivedData: MobileDataUsage? = nil
+
+           let mockTask = sut.getMobileDataUsageRequest(successHandler: { mobileDataUsage in
+               receivedData = mobileDataUsage
+
+           }, failureHandler: {
+             
+
+           }) as! URLSessionDataTaskMock
+
+           
+           mockTask.completionHandler(data, response, nil)
+
+           XCTAssertNil(receivedData)
+           
+           
+       }
     
     
     
