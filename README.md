@@ -7,7 +7,7 @@
 
 # UI: 
 
-![](/images/1.png | width=320)
+![](/images/1.png)
 
 ![](/images/2.png)
 
