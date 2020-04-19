@@ -20,6 +20,10 @@
                                 <rect key="frame" x="0.0" y="88" width="414" height="774"/>
                                 <color key="backgroundColor" systemColor="systemBackgroundColor" cocoaTouchSystemColor="whiteColor"/>
                             </tableView>
+                            <activityIndicatorView opaque="NO" contentMode="scaleToFill" horizontalHuggingPriority="750" verticalHuggingPriority="750" style="medium" id="Ajb-Cn-ngN">
+                                <rect key="frame" x="0.0" y="88" width="414" height="774"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                            </activityIndicatorView>
                         </subviews>
                         <color key="backgroundColor" systemColor="systemBackgroundColor" cocoaTouchSystemColor="whiteColor"/>
                         <constraints>
@@ -32,6 +36,7 @@
                     </view>
                     <navigationItem key="navigationItem" title="2008-2018 mobile data(Petabytes)" id="zh9-4p-a0a"/>
                     <connections>
+                        <outlet property="indicatorView" destination="Ajb-Cn-ngN" id="0PI-lT-gxa"/>
                         <outlet property="tableView" destination="GbF-yS-xsE" id="XsI-Wt-ZU9"/>
                     </connections>
                 </viewController>

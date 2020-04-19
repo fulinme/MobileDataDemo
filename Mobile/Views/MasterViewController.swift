@@ -28,17 +28,20 @@ class MasterViewController:  UIViewController {
 
     
     @IBOutlet weak var tableView: UITableView!
-    
+    @IBOutlet weak var indicatorView: UIActivityIndicatorView!
     
     override func viewDidLoad() {
         super.viewDidLoad()
         
         setUI()
-        
-        presenter.loadData()
-        
+        loadData()
     }
     
+    func loadData() {
+        
+         indicatorView.startAnimating()
+         presenter.loadData()
+    }
     
     private func setUI() {
         tableView.register(MasterTableViewCell.nib(), forCellReuseIdentifier: MasterTableViewCell.identifier)
@@ -92,25 +95,20 @@ extension MasterViewController: UITableViewDataSource {
 
 extension MasterViewController: UITableViewDelegate {
     
-
-    
 }
 
 
 
 extension MasterViewController: MasterViewProtocol {
     func receivedData(data: [MasterViewModel]) {
-        
+        indicatorView.stopAnimating()
         self.data = data
         tableView.reloadData()
     }
     
     
     func receivedDataFailed() {
-        
-        
+        indicatorView.stopAnimating()
     }
     
-    
-
 }
