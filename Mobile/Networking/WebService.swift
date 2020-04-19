@@ -40,6 +40,7 @@ class WebService: WebServiceProtocol {
          
              let url = URL(string: WebServiceUrls.URL_data_gov_sg_mobiledata)!
              
+        
              let task = session.dataTask(with: url) {
                     (data, response, error) -> Void in
            

@@ -8,7 +8,6 @@
 
 /* Begin PBXBuildFile section */
 		045A7A6A2449B8390036E69C /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 045A7A692449B8390036E69C /* AppDelegate.swift */; };
-		045A7A6C2449B8390036E69C /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 045A7A6B2449B8390036E69C /* SceneDelegate.swift */; };
 		045A7A6E2449B8390036E69C /* MasterViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 045A7A6D2449B8390036E69C /* MasterViewController.swift */; };
 		045A7A732449B8390036E69C /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 045A7A712449B8390036E69C /* Main.storyboard */; };
 		045A7A752449B83B0036E69C /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 045A7A742449B83B0036E69C /* Assets.xcassets */; };
@@ -54,7 +53,6 @@
 /* Begin PBXFileReference section */
 		045A7A662449B8390036E69C /* Mobile.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = Mobile.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		045A7A692449B8390036E69C /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
-		045A7A6B2449B8390036E69C /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
 		045A7A6D2449B8390036E69C /* MasterViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MasterViewController.swift; sourceTree = "<group>"; };
 		045A7A722449B8390036E69C /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
 		045A7A742449B83B0036E69C /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
@@ -140,7 +138,6 @@
 				045A7A9D2449B9080036E69C /* Presenters */,
 				045A7A9E2449B9160036E69C /* Extension */,
 				045A7A692449B8390036E69C /* AppDelegate.swift */,
-				045A7A6B2449B8390036E69C /* SceneDelegate.swift */,
 				045A7A742449B83B0036E69C /* Assets.xcassets */,
 				045A7A792449B83B0036E69C /* Info.plist */,
 			);
@@ -435,7 +432,6 @@
 			files = (
 				045A7AAB2449C0770036E69C /* WebService.swift in Sources */,
 				045A7A6A2449B8390036E69C /* AppDelegate.swift in Sources */,
-				045A7A6C2449B8390036E69C /* SceneDelegate.swift in Sources */,
 				045A7AB32449E5920036E69C /* MasterTableViewCell.swift in Sources */,
 				045A7AA92449BE1F0036E69C /* MobileDataUsage.swift in Sources */,
 				045A7A6E2449B8390036E69C /* MasterViewController.swift in Sources */,
