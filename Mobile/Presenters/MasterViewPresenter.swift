@@ -20,6 +20,8 @@ class MasterViewPresenter {
     
     weak var view: MasterViewProtocol?
     
+    var webService: WebServiceProtocol = WebService.shared
+    
     required init(view: MasterViewProtocol) {
         self.view = view
     }
@@ -63,7 +65,7 @@ extension MasterViewPresenter : MasterViewPresenterProtocol {
     
     func loadData() {
         
-        WebService.shared.getMobileDataUsageRequest(successHandler: { [unowned self] mobileDataUsage in
+        _ = webService.getMobileDataUsageRequest(successHandler: { [unowned self] mobileDataUsage in
             
             let viewData:[MasterViewModel] = self.convert(from: mobileDataUsage)
             
@@ -73,7 +75,9 @@ extension MasterViewPresenter : MasterViewPresenterProtocol {
             
                 
         }, failureHandler: {
-            
+            DispatchQueue.main.async{
+                self.view?.receivedDataFailed()
+            }
         })
         
     }

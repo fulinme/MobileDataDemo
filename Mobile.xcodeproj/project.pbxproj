@@ -29,6 +29,9 @@
 		045A7AC6244BFE960036E69C /* URLSessionDataTaskMock.swift in Sources */ = {isa = PBXBuildFile; fileRef = 045A7AC5244BFE960036E69C /* URLSessionDataTaskMock.swift */; };
 		045A7AC8244C25060036E69C /* Data.swift in Sources */ = {isa = PBXBuildFile; fileRef = 045A7AC7244C25060036E69C /* Data.swift */; };
 		045A7ACA244C2B710036E69C /* datastore_search_invalid.json in Resources */ = {isa = PBXBuildFile; fileRef = 045A7AC9244C2B710036E69C /* datastore_search_invalid.json */; };
+		045A7ACC244C3B950036E69C /* WebServiceMock.swift in Sources */ = {isa = PBXBuildFile; fileRef = 045A7ACB244C3B950036E69C /* WebServiceMock.swift */; };
+		045A7ACE244C3CFA0036E69C /* MasterViewControllerMock.swift in Sources */ = {isa = PBXBuildFile; fileRef = 045A7ACD244C3CFA0036E69C /* MasterViewControllerMock.swift */; };
+		045A7AD0244C40340036E69C /* MasterViewPresenterTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 045A7ACF244C40340036E69C /* MasterViewPresenterTests.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -77,6 +80,9 @@
 		045A7AC5244BFE960036E69C /* URLSessionDataTaskMock.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = URLSessionDataTaskMock.swift; sourceTree = "<group>"; };
 		045A7AC7244C25060036E69C /* Data.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Data.swift; sourceTree = "<group>"; };
 		045A7AC9244C2B710036E69C /* datastore_search_invalid.json */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.json; path = datastore_search_invalid.json; sourceTree = "<group>"; };
+		045A7ACB244C3B950036E69C /* WebServiceMock.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = WebServiceMock.swift; sourceTree = "<group>"; };
+		045A7ACD244C3CFA0036E69C /* MasterViewControllerMock.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MasterViewControllerMock.swift; sourceTree = "<group>"; };
+		045A7ACF244C40340036E69C /* MasterViewPresenterTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MasterViewPresenterTests.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -222,6 +228,8 @@
 				045A7AC1244BD05D0036E69C /* MasterViewPresenterMock.swift */,
 				045A7AC3244BFE510036E69C /* URLSessionMock.swift */,
 				045A7AC5244BFE960036E69C /* URLSessionDataTaskMock.swift */,
+				045A7ACB244C3B950036E69C /* WebServiceMock.swift */,
+				045A7ACD244C3CFA0036E69C /* MasterViewControllerMock.swift */,
 			);
 			path = Mocks;
 			sourceTree = "<group>";
@@ -267,6 +275,7 @@
 		045A7AA72449BA650036E69C /* Presenters */ = {
 			isa = PBXGroup;
 			children = (
+				045A7ACF244C40340036E69C /* MasterViewPresenterTests.swift */,
 			);
 			path = Presenters;
 			sourceTree = "<group>";
@@ -455,9 +464,12 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				045A7ACC244C3B950036E69C /* WebServiceMock.swift in Sources */,
 				045A7AC8244C25060036E69C /* Data.swift in Sources */,
 				045A7AC4244BFE510036E69C /* URLSessionMock.swift in Sources */,
 				045A7ABB244B3C5C0036E69C /* MasterViewControllerTests.swift in Sources */,
+				045A7ACE244C3CFA0036E69C /* MasterViewControllerMock.swift in Sources */,
+				045A7AD0244C40340036E69C /* MasterViewPresenterTests.swift in Sources */,
 				045A7AC2244BD05D0036E69C /* MasterViewPresenterMock.swift in Sources */,
 				045A7AC0244BC8C60036E69C /* WebServiceTests.swift in Sources */,
 				045A7A832449B83B0036E69C /* MobileTests.swift in Sources */,

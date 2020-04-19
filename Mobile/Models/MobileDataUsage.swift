@@ -23,13 +23,13 @@ struct MobileDataUsage: Codable, Equatable {
 
     
     static func == (lhs: MobileDataUsage, rhs: MobileDataUsage) -> Bool {
-        return lhs.help == rhs.help && lhs.success == rhs.success  && lhs.result == rhs.result
+        return lhs.help == rhs.help && lhs.success == rhs.success   //todo
     }
 }
 
 
 // MARK: - Result
-struct ResultObj: Codable, Equatable {
+struct ResultObj: Codable {
    
     
     let resourceID: String
@@ -47,12 +47,8 @@ struct ResultObj: Codable, Equatable {
            case total
     }
     
-    
-    static func == (lhs: ResultObj, rhs: ResultObj) -> Bool {
-        return lhs.resourceID == rhs.resourceID
-    }
-    
 }
+
 
 // MARK: - Field
 struct Field: Codable {

@@ -18,7 +18,7 @@ extension Data {
     
     let bundle = Bundle(for: TestBundleClass.self)
     let url = try XCTUnwrap(bundle.url(forResource: fileName, withExtension: "json"),
-                            "load josn file failed",
+                            "load json file failed",
       file: file, line: line)
     return try Data(contentsOf: url)
   }

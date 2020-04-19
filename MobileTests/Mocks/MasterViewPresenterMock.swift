@@ -12,6 +12,7 @@ import Foundation
 class MasterViewPresenterMock: MasterViewPresenterProtocol {
     
     func loadData() {
+     
         
     }
     

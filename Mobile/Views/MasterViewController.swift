@@ -11,6 +11,7 @@ import UIKit
 protocol MasterViewProtocol: AnyObject  {
     
     func receivedData(data: [MasterViewModel])
+    func receivedDataFailed()
     
 }
 
@@ -68,7 +69,6 @@ extension MasterViewController: UITableViewDataSource {
             [unowned self] in
             
             let cellData = self.data[indexPath.row]
-            debugPrint("process image clieck:")
             
             var message = ""
             cellData.record.forEach { masterRecordViewModel in
@@ -100,13 +100,16 @@ extension MasterViewController: UITableViewDelegate {
 
 extension MasterViewController: MasterViewProtocol {
     func receivedData(data: [MasterViewModel]) {
-        print("*******")
-        print(data)
         
         self.data = data
         tableView.reloadData()
     }
     
+    
+    func receivedDataFailed() {
+        
+        
+    }
     
     
 

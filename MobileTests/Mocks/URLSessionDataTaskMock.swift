@@ -7,7 +7,7 @@
 //
 
 import Foundation
-
+@testable import Mobile
 
 class URLSessionDataTaskMock: URLSessionDataTask {
     
