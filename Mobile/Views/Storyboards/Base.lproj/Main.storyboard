@@ -8,7 +8,7 @@
         <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
     </dependencies>
     <scenes>
-        <!--2008-2018 mobile data-->
+        <!--2008-2018 mobile data(Petabytes)-->
         <scene sceneID="SP0-Di-01M">
             <objects>
                 <viewController id="cC1-e2-xxQ" customClass="MasterViewController" customModule="Mobile" customModuleProvider="target" sceneMemberID="viewController">
@@ -30,7 +30,7 @@
                         </constraints>
                         <viewLayoutGuide key="safeArea" id="y8l-kZ-u5r"/>
                     </view>
-                    <navigationItem key="navigationItem" title="2008-2018 mobile data" id="zh9-4p-a0a"/>
+                    <navigationItem key="navigationItem" title="2008-2018 mobile data(Petabytes)" id="zh9-4p-a0a"/>
                     <connections>
                         <outlet property="tableView" destination="GbF-yS-xsE" id="XsI-Wt-ZU9"/>
                     </connections>

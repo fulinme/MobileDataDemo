@@ -16,13 +16,15 @@ struct WebServiceUrls {
 
 
 protocol WebServiceProtocol {
-    
+    func getMobileDataUsageRequest(successHandler: @escaping (_ mobileDataUsage: MobileDataUsage) -> Void, failureHandler: @escaping () -> Void) -> URLSessionDataTask
     
 }
 
 
 
-class WebService {
+class WebService: WebServiceProtocol {
+   
+    
     
     let session: URLSession
     
@@ -33,7 +35,7 @@ class WebService {
         self.session = session
     }
     
-    func getMobileDataUsageRequest(successHandler: @escaping (_ mobileDataUsage: MobileDataUsage) -> Void, failureHandler: @escaping () -> Void)
+    func getMobileDataUsageRequest(successHandler: @escaping (_ mobileDataUsage: MobileDataUsage) -> Void, failureHandler: @escaping () -> Void) -> URLSessionDataTask
     {
          
              let url = URL(string: WebServiceUrls.URL_data_gov_sg_mobiledata)!
@@ -59,15 +61,14 @@ class WebService {
              }
         
              task.resume()
+        
+            return task
      }
     
     
     
-}
-
-
-
-
-extension WebService: WebServiceProtocol {
+    
+    
     
 }
+ 
