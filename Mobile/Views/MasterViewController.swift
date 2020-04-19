@@ -48,6 +48,7 @@ class MasterViewController:  UIViewController {
         tableView.dataSource = self
         tableView.delegate = self
         
+        indicatorView.center = self.view.center
         
     }
 
