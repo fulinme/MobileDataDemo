@@ -11,8 +11,12 @@ import Foundation
 
 class URLSessionMock: URLSession {
     
-    override func dataTask(with url: URL) -> URLSessionDataTask {
-        <#code#>
+   
+    override func dataTask(with url: URL, completionHandler: @escaping (Data?, URLResponse?, Error?) -> Void) -> URLSessionDataTaskMock {
+        
+        return URLSessionDataTaskMock(completioHandler: completionHandler, url: url)
+        
     }
+    
     
 }
