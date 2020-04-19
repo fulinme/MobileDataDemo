@@ -18,6 +18,9 @@ protocol MasterViewPresenterProtocol {
 
 class MasterViewPresenter {
     
+    let START_YEAR = "2008"
+    let END_YEAR = "2018"
+    
     weak var view: MasterViewProtocol?
     
     var webService: WebServiceProtocol = WebService.shared
@@ -31,7 +34,7 @@ class MasterViewPresenter {
         
         var result:[MasterViewModel] = []
         
-        data.result.records.filter{ $0.year >= "2008" && $0.year <= "2018" }.forEach{
+        data.result.records.filter{ $0.year >= START_YEAR && $0.year <= END_YEAR }.forEach{
             record in
             
                 let yearQuarterArray = record.quarter.components(separatedBy: "-")

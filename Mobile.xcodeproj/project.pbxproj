@@ -31,6 +31,7 @@
 		045A7ACC244C3B950036E69C /* WebServiceMock.swift in Sources */ = {isa = PBXBuildFile; fileRef = 045A7ACB244C3B950036E69C /* WebServiceMock.swift */; };
 		045A7ACE244C3CFA0036E69C /* MasterViewControllerMock.swift in Sources */ = {isa = PBXBuildFile; fileRef = 045A7ACD244C3CFA0036E69C /* MasterViewControllerMock.swift */; };
 		045A7AD0244C40340036E69C /* MasterViewPresenterTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 045A7ACF244C40340036E69C /* MasterViewPresenterTests.swift */; };
+		04E4F279244C9A5E0010BF7F /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 04E4F278244C9A5E0010BF7F /* SceneDelegate.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -81,6 +82,7 @@
 		045A7ACB244C3B950036E69C /* WebServiceMock.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = WebServiceMock.swift; sourceTree = "<group>"; };
 		045A7ACD244C3CFA0036E69C /* MasterViewControllerMock.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MasterViewControllerMock.swift; sourceTree = "<group>"; };
 		045A7ACF244C40340036E69C /* MasterViewPresenterTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MasterViewPresenterTests.swift; sourceTree = "<group>"; };
+		04E4F278244C9A5E0010BF7F /* SceneDelegate.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -138,6 +140,7 @@
 				045A7A9D2449B9080036E69C /* Presenters */,
 				045A7A9E2449B9160036E69C /* Extension */,
 				045A7A692449B8390036E69C /* AppDelegate.swift */,
+				04E4F278244C9A5E0010BF7F /* SceneDelegate.swift */,
 				045A7A742449B83B0036E69C /* Assets.xcassets */,
 				045A7A792449B83B0036E69C /* Info.plist */,
 			);
@@ -437,6 +440,7 @@
 				045A7A6E2449B8390036E69C /* MasterViewController.swift in Sources */,
 				045A7AAD2449C8DB0036E69C /* MasterViewPresenter.swift in Sources */,
 				045A7AB02449DF750036E69C /* MasterViewModel.swift in Sources */,
+				04E4F279244C9A5E0010BF7F /* SceneDelegate.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -625,7 +629,7 @@
 					"$(inherited)",
 					"@executable_path/Frameworks",
 				);
-				PRODUCT_BUNDLE_IDENTIFIER = com.demo.Mobile;
+				PRODUCT_BUNDLE_IDENTIFIER = com.demo.Mobiledatausage;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SWIFT_VERSION = 5.0;
 				TARGETED_DEVICE_FAMILY = "1,2";
@@ -643,7 +647,7 @@
 					"$(inherited)",
 					"@executable_path/Frameworks",
 				);
-				PRODUCT_BUNDLE_IDENTIFIER = com.demo.Mobile;
+				PRODUCT_BUNDLE_IDENTIFIER = com.demo.Mobiledatausage;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SWIFT_VERSION = 5.0;
 				TARGETED_DEVICE_FAMILY = "1,2";

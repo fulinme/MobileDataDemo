@@ -94,10 +94,6 @@ class WebServiceTests: XCTestCase {
            
            let data = try Data.fromJSON(fileName: "datastore_search_invalid")
            
-           let decoder = JSONDecoder()
-           let mobileDataUsage = try? decoder.decode(MobileDataUsage.self, from: data)
-           
-           
            let response = HTTPURLResponse(url: url, statusCode: 200, httpVersion: nil, headerFields: nil)
          
            var receivedData: MobileDataUsage? = nil
