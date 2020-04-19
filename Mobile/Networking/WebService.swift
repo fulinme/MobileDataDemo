@@ -21,19 +21,24 @@ protocol WebServiceProtocol {
 }
 
 
-
 class WebService: WebServiceProtocol {
-   
-    
     
     let session: URLSession
     
-    static let shared = WebService(session: .shared)
+    static let shared = WebService()
     
     //Mark: dependency injection for testing
     init(session: URLSession) {
         self.session = session
     }
+
+    private init() {
+       let configuration = URLSessionConfiguration.default
+                 configuration.requestCachePolicy = .returnCacheDataElseLoad
+       
+       self.session = URLSession.init(configuration: configuration)
+    }
+    
     
     func getMobileDataUsageRequest(successHandler: @escaping (_ mobileDataUsage: MobileDataUsage) -> Void, failureHandler: @escaping () -> Void) -> URLSessionDataTask
     {
@@ -41,7 +46,7 @@ class WebService: WebServiceProtocol {
              let url = URL(string: WebServiceUrls.URL_data_gov_sg_mobiledata)!
              
         
-             let task = session.dataTask(with: url) {
+        let task = session.dataTask(with: url) {
                     (data, response, error) -> Void in
            
                  if let jsonData = data {
