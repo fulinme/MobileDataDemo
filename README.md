@@ -21,7 +21,4 @@
 
 
 
-
-# WIP
-try Charts API 
--change fake image into Charts with data
+ 
